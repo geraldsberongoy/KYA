@@ -1,0 +1,4 @@
+Use case: illustration-story
+Asset type: transparent in-app character asset for a Flutter alarm application
+Primary request: Derive a wildly celebrating approval version of the exact Alby mascot in the master image, consistent with the approval state in the reference board. Preserve the same body proportions, yellow clock casing, cream face, thick charcoal outline, orange limbs, and rendering style. Pose: jumping with both arms raised and feet lifted, joyful squeezed eyes, open cheering mouth. Include only a few small separate confetti pieces close around the character in red, blue, green, and purple.
+Constraints: genuinely transparent background; one character only; no UI; no speech bubble; no words; no watermark; same recognizable character identity and scale as the master.

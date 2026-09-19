@@ -1,0 +1,4 @@
+Use case: illustration-story
+Asset type: transparent in-app character asset for a Flutter alarm application
+Primary request: Derive a suspicious wakefulness-verification version of the exact Alby mascot in the master image. Preserve the same body proportions, yellow clock casing, cream face, thick charcoal outline, orange limbs, and rendering style. Expression: narrowed skeptical eyes, one raised eyebrow, tiny flat mouth; one hand holds a small magnifying glass near the face while the other rests on the hip. Cute and funny, never threatening.
+Constraints: genuinely transparent background; one character only; no UI; no speech bubble; no words; no watermark; same recognizable character identity and scale as the master.

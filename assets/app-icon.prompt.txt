@@ -1,0 +1,8 @@
+Use case: logo-brand
+Asset type: square production app icon for KYA — Know Your Alarm, used on iOS, Android, and web
+Primary request: Create a bold square app icon using a close-up of the exact Alby alarm-clock mascot from the master. Center Alby's cream face and twin yellow bells at large scale on a flat saturated alarm-yellow background. Preserve the thick charcoal outlines, rosy cheeks, black oval eyes, and joyful open smile. Simplify the body away so the face and bells remain legible at 48 pixels.
+Style/medium: premium cheerful mobile app icon, crisp illustrated finish matching the master and reference board
+Composition/framing: 1:1 square, centered symmetrical face, comfortable safe margin for rounded platform masks, no border
+Color palette: #FFD93D background, warm yellow and orange mascot, cream face, charcoal ink, coral cheeks
+Constraints: no words, no letters, no KYA text, no watermark, no transparent background, no external drop shadow, no rounded-corner mask baked into the image
+Avoid: photorealism, 3D icon frame, gradients in the background, tiny body details, extra objects

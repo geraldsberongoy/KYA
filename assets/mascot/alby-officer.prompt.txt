@@ -1,0 +1,4 @@
+Use case: illustration-story
+Asset type: transparent in-app character asset for a Flutter alarm application
+Primary request: Derive an official AI Snooze Compliance Officer version of the exact Alby mascot in the master image, consistent with the officer state in the reference board. Preserve the same body proportions, yellow clock casing, cream face, thick charcoal outline, orange limbs, and rendering style. Add a tiny navy compliance officer cap with a small gold clock badge and a dark navy clipboard held against one side. Expression: professionally cheerful but slightly stern, mouth a restrained small smile, centered front-facing stance.
+Constraints: genuinely transparent background; one character only; no UI; no speech bubble; no words; no watermark; same recognizable character identity and scale as the master.

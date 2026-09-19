@@ -1,0 +1,8 @@
+Use case: illustration-story
+Asset type: transparent in-app character asset for a Flutter alarm application
+Primary request: Create a polished full-body character cutout of Alby, the cute anthropomorphic alarm-clock mascot shown in the reference board. Match the reference character identity closely: round warm-yellow twin-bell alarm clock body, cream-white face, thick dark ink outlines, tiny orange arms and legs, rosy cheeks, black oval eyes, joyful open smile. Happy welcoming pose with one arm raised, suitable for the first Good morning alarm screen.
+Style/medium: premium children's educational app illustration, soft dimensional shading, crisp clean edges, tactile painted-vector feel
+Composition/framing: centered single character, full body fully visible with generous transparent margin, front-facing, no crop
+Color palette: alarm yellow, warm orange, cream white, charcoal ink, coral cheeks
+Constraints: genuinely transparent background; one character only; no UI; no speech bubble; no words; no letters; no watermark; preserve recognizable alarm clock silhouette; readable at 220 logical pixels
+Avoid: photorealism, 3D plastic render, sketchiness, extra limbs, duplicate bells, background shadow rectangle
