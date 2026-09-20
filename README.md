@@ -1,6 +1,12 @@
+<div align="center">
+
+<img src="assets/app-icon.png" alt="Alby, the KYA alarm clock mascot" width="140">
+
 # KYA™ — Know Your Alarm
 
 **Because waking up wasn't inconvenient enough.**
+
+</div>
 
 KYA is an alarm app that treats a snooze request like a regulated financial transaction. Tap SNOOZE and you don't get five more minutes — you get a *Snooze Termination Request*: a reason form, a CAPTCHA that flags sleeping as suspicious behavior, an AI Snooze Compliance Officer who rejects your appeal, fake processing, and a real front-camera KYC liveness check.
 
@@ -16,6 +22,19 @@ It runs from one Flutter codebase on web, iOS, and Android, with no backend, no 
 - **Deterministic by design.** The first CAPTCHA rejection and the officer's verdict are scripted, so demo timing lands the same way every run.
 - **Always escapable.** Stop Alarm is reachable at every stage and never subject to the hostile mechanics.
 - **Accessible.** Safe areas, system back, reduced motion, keyboard focus on web, 44–48px touch targets, scalable text.
+
+## Meet Alby
+
+Your alarm clock. Also, as of this morning, your compliance officer. Gets less friendly as the paperwork escalates.
+
+<table>
+<tr>
+<td align="center" width="25%"><img src="assets/mascot/alby-happy.png" alt="Alby, smiling" width="120"><br><b>Happy</b><br>The alarm rings</td>
+<td align="center" width="25%"><img src="assets/mascot/alby-suspicious.png" alt="Alby, narrowing his eyes" width="120"><br><b>Suspicious</b><br>You failed the CAPTCHA</td>
+<td align="center" width="25%"><img src="assets/mascot/alby-officer.png" alt="Alby in a peaked cap, holding a clipboard" width="120"><br><b>Officer</b><br>Appeal rejected</td>
+<td align="center" width="25%"><img src="assets/mascot/alby-celebrate.png" alt="Alby, celebrating" width="120"><br><b>Celebrate</b><br>30 seconds, authorized</td>
+</tr>
+</table>
 
 ## Requirements
 
