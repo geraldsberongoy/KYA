@@ -24,13 +24,14 @@ KYA is not a generic difficult alarm. Its unique mechanism is treating a snooze 
 
 ## Operating Context
 
-The core session begins on a ringing alarm, proceeds through a reason form, wakefulness CAPTCHA, AI Snooze Officer, fake processing, approval, a real 30-second countdown, and a returning alarm. It is designed for portrait phones but must remain usable in browsers and wider layouts.
+The core session begins on a ringing alarm, proceeds through a reason form, wakefulness CAPTCHA, AI Snooze Officer, fake processing, a mock KYC identity wake check on the front camera, approval, a real 30-second countdown, and a returning alarm. It is designed for portrait phones but must remain usable in browsers and wider layouts.
 
 ## Capabilities and Constraints
 
 - A user can play the complete flow without an account or backend.
 - The first CAPTCHA rejection and AI decision may be deterministic so the demo timing and jokes remain reliable.
 - Hostile interactions never permanently block progress or move controls outside safe bounds.
+- The KYC scan is a live preview only: nothing is recorded, uploaded, or stored, and a missing or denied camera still completes the scan.
 - A visible, reachable Stop Alarm escape remains available for safety.
 - The app honors safe areas, system back behavior, reduced-motion preferences, keyboard access on web, and minimum touch targets.
 - The initial release does not need background alarm scheduling, push notifications, authentication, a database, or a live language model.

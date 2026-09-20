@@ -16,7 +16,7 @@
 
 ## Scope
 
-- Alarm, hostile snooze, KYA introduction, reason form, CAPTCHA, AI officer, processing, approval, countdown, and alarm return.
+- Alarm, hostile snooze, KYA introduction, reason form, CAPTCHA, AI officer, processing, KYC identity wake check (live front-camera liveness scan), approval, countdown, and alarm return.
 - Responsive Flutter delivery for web, iOS, and Android from one codebase.
 - Deterministic local behavior for the first version; no backend or account system.
 - Generated Alby raster assets are production assets. Interface icons remain Flutter-native and consistent.

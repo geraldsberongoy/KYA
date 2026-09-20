@@ -136,6 +136,10 @@ class KyaApp extends StatelessWidget {
   }
 }
 
+// Scan length is demo-paced: three 4s phases keep the KYC beat under the 2-minute run.
+const int _kScanPhase = 4;
+const int _kScanTotal = _kScanPhase * 3;
+
 enum KyaStage {
   alarm,
   trap,
@@ -367,7 +371,7 @@ class _KyaFlowState extends State<KyaFlow> {
     _identityTimer = Timer.periodic(const Duration(seconds: 1), (timer) {
       if (!mounted) return;
       _identityTick++;
-      if (_identityTick >= 30) {
+      if (_identityTick >= _kScanTotal) {
         timer.cancel();
         setState(() {
           _identityProgress = 1;
@@ -379,7 +383,7 @@ class _KyaFlowState extends State<KyaFlow> {
           if (mounted) _go(KyaStage.approved);
         });
       } else {
-        setState(() => _identityProgress = _identityTick / 30);
+        setState(() => _identityProgress = _identityTick / _kScanTotal);
       }
     });
   }
@@ -1047,12 +1051,12 @@ class _KyaFlowState extends State<KyaFlow> {
   }
 
   Widget _identityScreen() {
-    final phase = _identityTick < 10
+    final phase = _identityTick < _kScanPhase
         ? 'FRONT'
-        : _identityTick < 20
+        : _identityTick < _kScanPhase * 2
         ? 'LEFT'
         : 'RIGHT';
-    final secondsRemaining = 10 - (_identityTick % 10);
+    final secondsRemaining = _kScanPhase - (_identityTick % _kScanPhase);
     final prompt = _identityComplete
         ? 'Identity confirmed. Somehow.'
         : !_identityScanning
