@@ -58,8 +58,6 @@ const steps = [
     copy: 'Your alarm goes off. The journey begins.',
     screen: alarmScreen,
     color: 'pink',
-    icon: 'button',
-    iconClass: 'icon-red',
   },
   {
     number: '02',
@@ -68,8 +66,6 @@ const steps = [
     copy: 'File a snooze request with a detailed justification.',
     screen: reasonScreen,
     color: 'blue',
-    icon: 'file',
-    iconClass: 'icon-blue',
   },
   {
     number: '03',
@@ -78,8 +74,6 @@ const steps = [
     copy: 'Our AI Snooze Officer reviews your request. Spoiler: it’s probably a no.',
     screen: appealScreen,
     color: 'gold',
-    icon: 'officer',
-    iconClass: 'icon-gold',
   },
   {
     number: '04',
@@ -88,8 +82,6 @@ const steps = [
     copy: 'Complete a wakefulness challenge and identity check.',
     screen: wakeCheckScreen,
     color: 'purple',
-    icon: 'puzzle',
-    iconClass: 'icon-purple',
   },
   {
     number: '05',
@@ -98,8 +90,6 @@ const steps = [
     copy: 'You’re up. Somehow, it was easier than another snooze.',
     screen: successScreen,
     color: 'green',
-    icon: 'sun',
-    iconClass: 'icon-green',
   },
 ];
 
@@ -235,6 +225,7 @@ function Hero() {
       <div className="container hero-grid">
         <div className="hero-copy reveal reveal-left">
           <h1 id="hero-title">Snoozing now requires <span className="hero-highlight">paperwork.</span></h1>
+          <p className="hero-subtitle">The alarm clock that makes getting up easier than asking for five more minutes.</p>
           <div className="hero-actions">
             <AppLink className="button button-blue" />
             <a className="button button-white" href="#how">See how it works</a>
@@ -362,9 +353,7 @@ function HowItWorks() {
                   <PhoneFrame src={step.screen} alt="" eager={index === 0} />
                 </div>
                 <span className={`step-number ${step.color}`}>{step.number}</span>
-                <span className={`step-icon ${step.iconClass}`}><Icon name={step.icon} /></span>
                 <div>
-                  <span className="step-label mono">Step {step.number} · {step.label}</span>
                   <h3>{step.title}</h3>
                   <p>{step.copy}</p>
                 </div>
@@ -383,7 +372,6 @@ function Testimonials() {
       <div className="container">
         <div className="testimonials-head reveal reveal-left">
           <h2 id="testimonials-title">Testimony submitted under oath.</h2>
-          <span className="sample-label mono">Real people · Real mornings · Questionable choices</span>
         </div>
         <div className="testimonial-grid">
           {testimonials.map((testimonial, index) => (
@@ -524,9 +512,9 @@ export default function App() {
       <main id="main-content">
         <div id="top" />
         <Hero />
-        <DueProcess />
         <HowItWorks />
         <Features />
+        <DueProcess />
         <Testimonials />
         <Faq />
         <FinalCta />

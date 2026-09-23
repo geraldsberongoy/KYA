@@ -75,6 +75,7 @@ section { padding: 92px 0; }
 .hero-highlight::before { position: absolute; z-index: -1; inset: 12% -.08em 3%; border-radius: .18em .1em .2em .12em; background: var(--yellow); content: ""; transform: rotate(-1.5deg); }
 .hero-highlight::after { position: absolute; right: .02em; bottom: -.05em; left: .02em; height: .055em; border-radius: 99px; background: var(--blue); content: ""; transform: rotate(-1deg); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero-subtitle { max-width: 640px; margin-bottom: 24px; color: var(--gray); font-size: 1.12rem; line-height: 1.55; }
 .hero-visual { position: relative; min-height: 690px; }
 .hero-sun { position: absolute; inset: 8% 0 2% 2%; border-radius: 51% 49% 45% 55%; background: var(--yellow-pale); transform: rotate(-4deg); }
 .hero-phone { position: absolute; z-index: 2; width: clamp(270px, 21vw, 320px); }
@@ -126,7 +127,7 @@ section { padding: 92px 0; }
 .how-dots span.active { width: 24px; border-radius: 99px; background: var(--blue); }
 .steps-note { right: -8px; bottom: 74px; transform: rotate(7deg); }
 .step-list { margin: 0; padding: 0; list-style: none; }
-.step { display: grid; min-height: 52vh; grid-template-columns: 54px 45px 1fr; align-content: center; align-items: center; gap: 13px; border-bottom: 1px solid var(--line); opacity: .4; transform: translateX(18px); transition: opacity .35s ease, transform .35s ease; }
+.step { display: grid; min-height: 52vh; grid-template-columns: 54px 1fr; align-content: center; align-items: center; gap: 13px; border-bottom: 1px solid var(--line); opacity: .4; transform: translateX(18px); transition: opacity .35s ease, transform .35s ease; }
 .step:first-child { border-top: 1px solid var(--line); }
 .step.active { opacity: 1; transform: none; }
 .step-number { display: grid; width: 48px; height: 48px; place-items: center; border-radius: 50%; color: white; font: 800 .78rem "Roboto Mono", monospace; }
@@ -135,18 +136,13 @@ section { padding: 92px 0; }
 .step-number.gold { color: var(--navy); background: var(--yellow); }
 .step-number.purple { background: var(--purple); }
 .step-number.green { background: #31b875; }
-.step-icon { display: grid; width: 42px; height: 42px; place-items: center; border-radius: 13px; }
-.step-icon svg { width: 24px; height: 24px; }
-.step-icon img { width: 42px; filter: drop-shadow(0 4px 5px rgba(22,35,51,.12)); }
-.step-label { display: block; margin-bottom: 6px; color: var(--blue-dark); font-size: .58rem; letter-spacing: .08em; }
 .step h3 { margin: 0 0 4px; font-size: 1.42rem; }
 .step p { max-width: 430px; margin: 0; font-size: .94rem; }
 @keyframes screen-in { from { opacity: 0; transform: translateY(15px) scale(.985); filter: blur(5px); } to { opacity: 1; transform: none; filter: none; } }
 
 .testimonials { padding: 58px 0 78px; background: #fffef9; }
-.testimonials-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 24px; }
-.testimonials-head h2 { margin: 0; }
-.sample-label { color: var(--gray); font-size: .62rem; }
+.testimonials-head { margin-bottom: 24px; }
+.testimonials-head h2 { margin: 0; font-size: clamp(1.35rem, 5.2vw, 3.9rem); white-space: nowrap; }
 .testimonial-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .testimonial { position: relative; min-height: 235px; border: 1px solid var(--line); border-radius: 16px; padding: 22px; background: white; box-shadow: 0 7px 22px rgba(22,35,51,.06); }
 .witness { display: flex; align-items: center; gap: 11px; }
@@ -245,9 +241,8 @@ section { padding: 92px 0; }
   .screen-status { right: -92px; bottom: 18px; font-size: .52rem; }
   .how-dots { bottom: 8px; }
   .steps-note { right: auto; bottom: 54px; left: 8px; padding: 5px 7px; background: rgba(255,253,245,.94); font-size: .66rem; }
-  .step { min-height: 44vh; grid-template-columns: 45px 38px 1fr; gap: 9px; padding-block: 30px; }
+  .step { min-height: auto; grid-template-columns: 45px 1fr; gap: 9px; padding-block: 30px; }
   .step-number { width: 42px; height: 42px; }
-  .step-icon { width: 36px; height: 36px; }
   .step h3 { font-size: 1.22rem; }
   .testimonials { padding: 50px 0 65px; }
   .testimonials-head { align-items: flex-start; flex-direction: column; }
