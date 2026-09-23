@@ -2,6 +2,8 @@
 
 This workspace is scaffolded for the FlutterFlow AI DSL.
 
+The root `pubspec.yaml` builds the Flutter app (`lib/main.dart`, `flutter build web`). The FlutterFlow AI workspace pubspec lives in `flutterflow.pubspec.yaml` / `flutterflow.pubspec.lock`; swap them into `pubspec.yaml` / `pubspec.lock` before running `flutterflow ai` commands.
+
 ## Quickstart
 
 ```bash
