@@ -17,12 +17,10 @@ migrate_working_dir/
 *.ipr
 *.iws
 .idea/
-
 # The .vscode folder contains launch configuration and tasks you configure in
 # VS Code which you may wish to be included in version control, so this line
 # is commented out by default.
 #.vscode/
-
 # Flutter/Dart/Pub related
 **/doc/api/
 **/ios/Flutter/.last_build_id
@@ -32,17 +30,41 @@ migrate_working_dir/
 .pub/
 /build/
 /coverage/
-
 # Symbolication related
 app.*.symbols
-
 # Obfuscation related
 app.*.map.json
-
 # Android Studio will place build artifacts here
 /android/app/debug
 /android/app/profile
 /android/app/release
-
 # Widget Preview related
 .widget_preview/
+# FlutterFlow AI managed
+.env
+.flutterflow/.env
+.flutterflow/sdk/
+.flutterflow/runs.jsonl
+.flutterflow/history/
+.flutterflow/traces/
+.flutterflow/backups/
+.flutterflow/support/
+.flutterflow/workspace.json
+.flutterflow/last_run.json
+.flutterflow/recovery.json
+.flutterflow/plan.md
+.flutterflow/project_sdk_meta.json
+.flutterflow/generated_code_state.json
+generated_code/
+.ffai_staging/
+.packages
+build/
+# Landing site generated and local state
+landing/node_modules/
+landing/dist/
+landing/.vercel/
+# Machine-local agent integrations
+.codex/
+.gemini/
+.kiro/
+.mcp.json
