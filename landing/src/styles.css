@@ -77,7 +77,7 @@ section { padding: var(--section-space) 0; }
 .hero-highlight::before { position: absolute; z-index: -1; inset: 12% -.08em 3%; border-radius: .18em .1em .2em .12em; background: var(--yellow); content: ""; transform: rotate(-1.5deg); }
 .hero-highlight::after { position: absolute; right: .02em; bottom: -.05em; left: .02em; height: .055em; border-radius: 99px; background: var(--blue); content: ""; transform: rotate(-1deg); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
-.hero-subtitle { max-width: 640px; margin-bottom: 24px; color: var(--gray); font-size: 1.12rem; line-height: 1.55; }
+.hero-subtitle { max-width: 45ch; margin-bottom: 24px; color: var(--gray); font-size: 1.12rem; font-weight: 600; line-height: 1.55; text-wrap: balance; }
 .hero-visual { position: relative; min-height: 690px; }
 .hero-sun { position: absolute; inset: 8% 0 2% 2%; border-radius: 51% 49% 45% 55%; background: var(--yellow-pale); transform: rotate(-4deg); }
 .hero-phone { position: absolute; z-index: 2; width: clamp(270px, 21vw, 320px); }
