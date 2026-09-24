@@ -9,7 +9,7 @@ import appealScreen from '../screens/7.png';
 import wakeCheckScreen from '../screens/9.png';
 import successScreen from '../screens/10.png';
 
-const APP_URL = 'https://app.flutterflow.io/run/snooze-compliance-cxmajk';
+const APP_URL = 'https://kya-iota.vercel.app/';
 
 const features = [
   {
